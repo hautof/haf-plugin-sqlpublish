@@ -1,6 +1,6 @@
 ### haf plugin sql publish
 
-    The plugin sql publish of haf
+    The plugin sql publish of haf, now only support mysql
 
 [![Build Status](https://travis-ci.org/hautof/haf-plugin-sqlpublish.svg?branch=master)](https://travis-ci.org/hautof/haf-plugin-sqlpublish)
 
@@ -24,7 +24,7 @@
 > using as haf params
 
 ```bash
-    python -m haf run -ws=True
+    python -m haf run --sql-publish=True --sql-publish-db=192.168.0.101:6606@root:test123@haf_publish
 ```
 
 > using as haf config
