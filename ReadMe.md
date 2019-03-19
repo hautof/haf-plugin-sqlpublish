@@ -3,6 +3,7 @@
     The plugin sql publish of haf, now only support mysql
 
 [![Build Status](https://travis-ci.org/hautof/haf-plugin-sqlpublish.svg?branch=master)](https://travis-ci.org/hautof/haf-plugin-sqlpublish)
+[![PyPI](https://img.shields.io/pypi/v/hafsqlpublish.svg)](https://img.shields.io/pypi/v/hafsqlpublish.svg)
 
 ### How to get it?
 
