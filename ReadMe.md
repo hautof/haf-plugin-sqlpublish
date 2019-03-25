@@ -22,6 +22,11 @@
 
 ### usage
 
+> notice
+
+    first of all , you must create an new database by the haf-plugin-sqlpublish/haf_publish.sql script file.
+
+
 > using as haf params
 
 ```bash
@@ -43,3 +48,9 @@
         "protocol": "mysql"
       }
 ```
+
+
+### design
+
+
+![sql](https://raw.githubusercontent.com/tsbxmw/haf/master/docs/png/haf-publish.png)
