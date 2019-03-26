@@ -214,8 +214,9 @@ class SQLAPIPublish(object):
             sql_response_script = ";".join([str(x) for x in db_casesqlinfo_script.sql_response])
         else:
             sql_response_script = str(db_casesqlinfo_script.sql_response)
+        sql_response_script = sql_response_script.replace("'", "\\'")
         sql_sc = [
-            f"""insert into api_case_sqlinfo_script (sql_response) values ('{sql_response_script}');""",
+            f"insert into api_case_sqlinfo_script (sql_response) values ('{sql_response_script}');",
             f" SELECT @@IDENTITY AS Id "]
         return sql_sc
 

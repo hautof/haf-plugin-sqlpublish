@@ -6,7 +6,7 @@ PACKAGE_NAME = "hafsqlpublish"
 
 VERSION_MAIN = 0
 VERSION_SUB = 0
-VERSION_FIX = 3
+VERSION_FIX = 4
 
 
 requires = [
