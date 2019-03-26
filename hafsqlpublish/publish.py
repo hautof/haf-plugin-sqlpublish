@@ -15,7 +15,7 @@ from hafsqlpublish.db_web import *
 logger = Log.getLogger(__name__)
 import traceback
 
-rb = False
+rb = True
 
 
 class Publish(object):
