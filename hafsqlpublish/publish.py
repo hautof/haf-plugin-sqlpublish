@@ -297,7 +297,7 @@ class Publish(object):
                             stage_result_id = self.mysql_tool.connect_execute(self.sql_config, sql_web_publish.insert_web_case_stage_result(stage_result),
                                                         run_background=rb, commit=True)[1][0][0]
                             
-                            stage_ = DBWebCaseStage(0, stage.id, stage.name, stage.operation, stage.show_try, stage.time_sleep, stage.info, stage_result_id, case_id, stage.run_count)
+                            stage_ = DBWebCaseStage(0, stage.id, stage.name, stage.operation, stage.show_try, stage.time_sleep, stage.info, stage_result_id, case_id, stage.run_count if stage.run_count else 0)
                             stage_id = self.mysql_tool.connect_execute(self.sql_config, sql_web_publish.insert_web_case_stage(stage_),
                                                         run_background=rb, commit=True)[1][0][0]
                             for stage_path_type in stage.path.keys():
