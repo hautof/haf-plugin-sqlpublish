@@ -6,7 +6,7 @@ PACKAGE_NAME = "hafsqlpublish"
 
 VERSION_MAIN = 0
 VERSION_SUB = 0
-VERSION_FIX = 6
+VERSION_FIX = 7
 
 
 requires = [
@@ -40,6 +40,8 @@ setup(
     packages=setuptools.find_packages(),
     python_requires='>=3.6',
     install_requires=requires,
+    entry_points={"haf": ["hafsqlpublish=hafsqlpublish"]},
+    py_modules=["hafsqlpublish"],
     platforms='Posix; MacOS X; Windows',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
